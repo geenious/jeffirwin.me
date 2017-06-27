@@ -1,0 +1,172 @@
+/**************************************************
+GENERAL
+**************************************************/
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+/**************************************************
+NAVIGATION MENU
+**************************************************/
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(#466995, #FFF);
+  border-bottom: 2px solid #466995;
+  position: fixed;
+  z-index: 1000;
+}
+
+nav ul {
+  padding: 10px;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: "Oswald";
+}
+
+nav li a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  color: #466995;
+}
+
+
+
+/**************************************************
+ABOUT
+**************************************************/
+
+.about {
+  margin: 0 auto;
+  padding: 125px;
+  height: 600px;
+  display: block;
+  background-color: #466995;
+  text-align: center;
+  color: #FFF;
+  font-family: "Oswald";
+}
+
+.about p {
+  padding: 10px;
+  border-bottom: 1px solid #FFF;
+}
+
+.about a {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  background-color: #FFF;
+  color: #466995;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.about a:hover {
+  background-color: #466995;
+  color: #fff;
+}
+
+
+
+/**************************************************
+PORTFOLIO
+**************************************************/
+
+.portfolio {
+  height: 600px;
+  text-align: center;
+  font-family: "Oswald";
+  color: #466995;
+}
+
+.porfolio ul {
+    width: 100%;
+}
+
+.portfolio li {
+  list-style: none;
+  float: left;
+  width: 25%;
+  margin: 10px 2%;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+
+
+/**************************************************
+CONTACT
+**************************************************/
+
+.contact {
+  height: 600px;
+  font-family: "Oswald";
+  color: #fff;
+  background-color: #466995;
+  padding-top: 20px;
+}
+
+.contact h1, p {
+  text-align: center;
+}
+
+.contact li {
+  list-style: none;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 0 0 0 30px;
+  margin: 40px 0 10px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info li.mail a {
+  background-image: url("../img/mail.png");
+}
+
+.contact-info li.twitter a {
+  background-image: url("../img/twitter.png");
+}
+
+
+
+/**************************************************
+FOOTER
+**************************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding: 20px;
+  color: #ccc;
+  background-color: #466995;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
