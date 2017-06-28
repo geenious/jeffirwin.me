@@ -3,8 +3,7 @@ GENERAL
 **************************************************/
 
 main {
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -52,8 +51,8 @@ ABOUT
 
 .about {
   margin: 0 auto;
-  padding: 125px;
-  height: 600px;
+  padding: 100px;
+  height: 500px;
   display: block;
   background-color: #466995;
   text-align: center;
@@ -93,6 +92,7 @@ PORTFOLIO
   text-align: center;
   font-family: "Oswald";
   color: #466995;
+  padding-top: 100px;
 }
 
 .porfolio ul {
@@ -119,7 +119,7 @@ CONTACT
   font-family: "Oswald";
   color: #fff;
   background-color: #466995;
-  padding-top: 20px;
+  padding-top: 100px;
 }
 
 .contact h1, p {
