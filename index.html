@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Jeff Irwin | Designer</title>
+    <title>Jeff Irwin | Developer</title>
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -28,7 +28,9 @@
           <a href="https://www.linkedin.com/in/jeff-irwin-333a7a64/" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
           <a href="https://github.com/geenious" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
         </div>
-
+        <div id='resume'>
+          <a href='img/resume.pdf' target="_blank">Resume</a>
+        </div>
       </section>
       <section class="portfolio" id='portfolio'>
         <h1>Portfolio</h1>
@@ -41,23 +43,25 @@
         <section id='skills'>
           <img src='img/HTML5.png'>
           <img src='img/css3.png'>
-          <img src='img/javascript2.png'>
+          <img src='img/javascript.png'>
           <img src='img/nodejs-icon.svg'>
         </section>
       </section>
       <section class="contact" id="contact">
         <h1>Contact Me</h1>
-        <p>I am always excepting web design work. Please do not hesitate to reach out.</p>
-        <ul class="contact-info">
-          <li class="mail"><a href="mailto:jeff.irwin@live.com">jeff.irwin@live.com</a></li>
-          <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=jirwinTweets" target="_blank">@jirwinTweets</a></li>
-        </ul>
+        <div id='contactForm'>
+          <form action='./contact.php' method='post'>
+            <input type='text' name='name' placeholder='Name'>
+            <input type='email' name='email' placeholder='Email'>
+            <textarea rows='10' name='message' placeholder='Message'></textarea>
+            <button type='submit'>Submit</button>
+          </form>
+        </div>
       </section>
-      <footer>
-        <a href="http://twitter.com/jirwinTweets"><img src="img/twitter-wrap.png" alt="Twitter logo" class="social-icon"></a>
-        <a href="http://www.facebook.com/jeff.irwin.dev"><img src="img/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
-        <p>&copy; 2017 Jeff Irwin.</p>
-      </footer>
     </main>
+    <footer>
+      <p>&copy; 2017 Jeff Irwin.<a href="https://www.linkedin.com/in/jeff-irwin-333a7a64/" target="_blank"><i id='footericon' class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a href="https://github.com/geenious" target="_blank"><i id='footericon' class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+    </footer>
   </body>
 </html>

@@ -2,6 +2,9 @@
 GENERAL
 **************************************************/
 
+html {
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -71,7 +74,7 @@ ABOUT
 .about {
   margin: 0 auto;
   padding: 100px;
-  min-height: 100vh;
+  height: 100vh;
   box-sizing: border-box;
   display: block;
   background-color: #466995;
@@ -91,16 +94,41 @@ ABOUT
 }
 
 .about p {
-  font-size: 1.6em;
+  font-size: 1.9em;
   padding: 10px;
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px black;
 }
 
+#resume {
+  display: flex;
+  justify-content: center;
+}
+
+#resume a {
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  padding: 10px 50px;
+  background-color: #fff;
+  color: #466995;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 2px 2px 4px black;
+  transition-duration: 700ms;
+}
+
+#resume a:hover {
+  background-color: #466995;
+  color: #fff;
+  transition-duration: 700ms;
+  transform: scale(1.3);
+}
+
 #social {
   display: flex;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 #social a {
@@ -130,7 +158,12 @@ PORTFOLIO
 **************************************************/
 
 .portfolio {
-  min-height: 100vh;
+  height: 100vh;
+  /*background-image: url('../img/brickBG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
   box-sizing: border-box;
   text-align: center;
   font-family: "Oswald";
@@ -141,6 +174,7 @@ PORTFOLIO
   font-size: 3.5em;
   text-shadow: 1px 1px 2px black;
   letter-spacing: 2px;
+  padding-top: 100px;
 }
 
 .portfolio ul {
@@ -208,39 +242,53 @@ CONTACT
 **************************************************/
 
 .contact {
-  height: 600px;
+  height: 100vh;
   font-family: "Oswald";
   color: #fff;
   background-color: #466995;
+  background-image: url('../img/contactBG.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact h1 {
+  text-align: center;
   padding-top: 100px;
+  font-size: 3.5em;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 2px;
 }
 
-.contact h1, p {
-  text-align: center;
+#contactForm {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px 5px #466995;
+  padding: 20px;
 }
 
-.contact li {
-  list-style: none;
+input {
+  line-height: 3em;
+  width: 100%;
+  margin-top: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  padding: 0 0 0 30px;
-  margin: 40px 0 10px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.contact-info li.mail a {
-  background-image: url("../img/mail.png");
-}
-
-.contact-info li.twitter a {
-  background-image: url("../img/twitter.png");
+button {
+  font-size: 1.6em;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 
@@ -250,16 +298,22 @@ FOOTER
 **************************************************/
 
 footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding: 20px;
-  color: #ccc;
-  background-color: #466995;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#FFF, #466995);
+  border-top: 1px solid #466995;
+  height: 80px;
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+footer p {
+  font-family: "Oswald";
+  color: #333;
+}
+
+footer a {
+  margin-left: 10px;
+}
+
+#footericon {
+  color: #333;
 }
