@@ -317,3 +317,9 @@ footer a {
 #footericon {
   color: #333;
 }
+
+@media (max-width: 600px) {
+  .about p {
+    font-size: 2.6em;
+  }
+}
