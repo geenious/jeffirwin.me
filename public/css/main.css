@@ -183,6 +183,12 @@ PORTFOLIO
   padding: 0;
 }
 
+.project-list {
+  position: relative;
+  left: -100vw;
+  transition: 1000ms;
+}
+
 .portfolio a {
   list-style: none;
   flex-basis: 30%;
